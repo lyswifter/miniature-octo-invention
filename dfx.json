@@ -1,0 +1,35 @@
+{
+  "canisters": {
+    "miniature_octo_invention": {
+      "main": "src/miniature_octo_invention/main.mo",
+      "type": "motoko"
+    },
+    "miniature_octo_invention_assets": {
+      "dependencies": [
+        "miniature_octo_invention"
+      ],
+      "frontend": {
+        "entrypoint": "src/miniature_octo_invention_assets/src/index.html"
+      },
+      "source": [
+        "src/miniature_octo_invention_assets/assets",
+        "dist/miniature_octo_invention_assets/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "dfx": "0.9.3",
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  },
+  "version": 1
+}
